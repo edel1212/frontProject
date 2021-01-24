@@ -31,19 +31,21 @@
       <div class="navbar__logo">
         <i class="fas fa-cannabis"></i>
         <a href="#">Yoo!!</a>
+      </div>  
+      <div class="div.navbar__mune">
+        <ul class="navbar__mune">
+          <li class="navbar__mune__item active">Home</li>
+          <li class="navbar__mune__item">About</li>
+          <li class="navbar__mune__item">Skills</li>
+          <li class="navbar__mune__item">My work</li>
+          <li class="navbar__mune__item">Testiminal</li>
+          <li class="navbar__mune__item">Contact</li>
+        </ul>
       </div>
-      <ul class="navbar__mune">
-        <li class="navbar__mune__item">Home</li>
-        <li class="navbar__mune__item">About</li>
-        <li class="navbar__mune__item">Skills</li>
-        <li class="navbar__mune__item">My work</li>
-        <li class="navbar__mune__item">Testiminal</li>
-        <li class="navbar__mune__item">Contact</li>
-      </ul>
     </nav>
+    
     <!-- Home -->
-    <seciton id="home">
-      <img class="hmoe__avatar" src="img/profile.jpg" alt="Dog profile img">
+    <section id="home">
       <h1 class="home__tittle">
         Hello </br>
         Wang! Wang!
@@ -52,9 +54,11 @@
         Wang!!~ Wang!!!!!!  Wang!!
       </h2>
       <button class="home__contact">CONTACT ME</button>
-    </seciton>
+    </section>
+
+
     <!--About-->
-    <section id="about">
+    <section id="about" class="section section__container">
       <h1>About me</h1>
       <p>
         Lorem Ipsum is simply dummy 
@@ -99,14 +103,177 @@
           </div>
         </div>
       </div>
+      <div class="about__jobs">
+        <div class="job">
+          <img src="img/logo1.png" alt="companyLogo" class="job__logo">
+          <div class="job__discription">
+            <p class="job__name">wang</p>
+            <p class="job__period">rRRRRRR</p>          
+          </div>        
+        </div>
+        <div class="job">
+          <img src="img/logo1.png" alt="companyLogo" class="job__logo">
+          <div class="job__discription">
+            <p class="job__name">wang2</p>
+            <p class="job__period">wRrrrrrrRRR</p>          
+          </div>
+        </div>
+      </div>
     </section>
+
+
+
     <!--Skill-->
-    <sction id="skills"></sction>
+    <section id="skills" class="section">
+      <div class="section__container">
+        <h1>Skills</h1>
+      <h2>Slills & Attributes</h2>
+      <p>
+        Lorem Ipsum is simply dummy 
+        text of the printing and typesetting 
+        industry. 
+        Lorem Ipsum has been the industry's 
+        standard dummy text ever since the 1500s,
+         when an unknown printer took a galley of
+      </p>
+      <div class="skillset">
+        <div class="skillset__left">
+          <h3 class="skillset__title">Skills</h3>
+          <div class="skill">
+            <div class="skill__description">
+              <span>HTML</span>
+              <span>100%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value">
+                <!-- css -->
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>HTML</span>
+              <span>100%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value">
+                <!-- css -->
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>HTML</span>
+              <span>100%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value">
+                <!-- css -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skillset__right">
+          <div class="tools">
+            <h3 class="skillset_tittle">Tools</h3>
+            <ul class="tools__list">
+             <li><span>Vs</span></li>
+             <li><span>eclips</span></li>
+             <li><span>mysql</span></li>
+             <li><span>mongo</span></li>
+             <li><span>maria</span></li>             
+            </ul>
+          </div>
+          <div class="etc">
+            <h3 class="skillset_tittle">Etc</h3>
+            <ul class="etc__list">
+              <li><span>Google</span></li>
+              <li><span>Alholisim</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+    </section>
+
+
     <!-- work-->
-    <sction id="work"></sction>
+    <section id="work" class="section">
+      <h1>My work</h1>
+      <h3>Projects</h3>
+      <div class="work__categories">
+        <button class="category__btn">All<span class="category__count">5</span></button>
+        <button class="category__btn">Front-end<span class="category__count">3</span></button>
+        <button class="category__btn">Back-end<span class="category__count">2</span></button>
+      </div>
+      <div class="work__projects">
+        <a href="https://www.naver.com" target="blank" class="project">Dog</a>
+        <img class="project__img" src="img/projects/img1.jpg" alt="dog_image1">
+        <div class="project_description">
+          <h3>Dog</h3>
+          <span>Wang!</span>
+        </div>
+      </div>
+      <div class="work__projects">
+        <a href="https://www.naver.com" target="blank" class="project">Dog</a>
+        <img class="project__img" src="img/projects/img2.jpg" alt="dog_image2">
+        <div class="project_description">
+          <h3>Dog2</h3>
+          <span>Wang!</span>
+        </div>
+      </div>
+      <div class="work__projects">
+        <a href="https://www.naver.com" target="blank" class="project">Dog</a>
+        <img class="project__img" src="img/projects/img3.jpg" alt="dog_image3">
+        <div class="project_description">
+          <h3>Dog3</h3>
+          <span>Wang!</span>
+        </div>
+      </div>
+    </section>
+
+
     <!--Testimonials-->
-    <sction id="testimonials"></sction>
+    <section id="testimonials" class="section">
+      <h1>Testimonials</h1>
+      <h3>See what say say about me</h3>
+      <div class="testimonial">
+        <img src="img/person.jpg" alt="person" class="testimonial__avatat">
+        <div class="testimonial_speech-bubble">
+          <p>
+            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and
+            1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by
+            English versions from the 1914 translation by H. Rackham.
+          </p>
+          <p class="name"><a href="">wang/samsung</a></p>
+        </div>
+        <div class="testimonial">
+          <img src="img/person.jpg" alt="person" class="testimonial__avatat">
+          <div class="testimonial_speech-bubble">
+            <p>
+              The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and
+              1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by
+              English versions from the 1914 translation by H. Rackham.
+            </p>
+            <p class="name"><a href="">wang/samsung</a></p>
+          </div>
+      </div>
+    </sction>
+
+
     <!--Contact-->
-    <section id="contact"></section>
+    <section id="contact" class="section">
+      <h1 class="contatct__title">Let's talk</h1>
+      <h2 class="contact__email">edel1212@naver.com</h2>
+      <div class="contact__link">
+          <a href="https://github.com">
+            <i></i>
+          </a>
+      </div>
+      <div class="contact__rights">
+        copyRight 2021 yoo
+      </div>
+    </section>
   </body>
 </html>
