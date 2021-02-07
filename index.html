@@ -32,28 +32,35 @@
         <i class="fas fa-cannabis"></i>
         <a href="#">Yoo!!</a>
       </div>  
-      <div class="div.navbar__mune">
-        <ul class="navbar__mune">
-          <li class="navbar__mune__item active">Home</li>
-          <li class="navbar__mune__item">About</li>
-          <li class="navbar__mune__item">Skills</li>
-          <li class="navbar__mune__item">My work</li>
-          <li class="navbar__mune__item">Testiminal</li>
-          <li class="navbar__mune__item">Contact</li>
+      <div class="navbar__menu">
+        <ul class="navbar__menu navbar__menu_ul">
+          <li class="navbar__menu__item active" data-link="#home">Home</li>
+          <li class="navbar__menu__item" data-link="#about">About</li>
+          <li class="navbar__menu__item" data-link="#skills">Skills</li>
+          <li class="navbar__menu__item" data-link="#work">My work</li>
+          <li class="navbar__menu__item" data-link="#testimonials">Testiminal</li>
+          <li class="navbar__menu__item" data-link="#contact">Contact</li>
         </ul>
       </div>
+      
+      <!-- Toggle Btn -->
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
     </nav>
     
     <!-- Home -->
     <section id="home">
-      <h1 class="home__tittle">
-        Hello </br>
-        Wang! Wang!
-      </h1>
-      <h2 class="home__descripttion">
-        Wang!!~ Wang!!!!!!  Wang!!
-      </h2>
-      <button class="home__contact">CONTACT ME</button>
+      <div class="home__container">
+        <h1 class="home__tittle">
+          Hello </br>
+          Wang! Wang!
+        </h1>
+        <h2 class="home__descripttion">
+          Wang!!~ Wang!!!!!!  Wang!!
+        </h2>
+        <button class="home__contact">CONTACT ME</button>
+      </div>
     </section>
 
 
@@ -200,54 +207,46 @@
 
     <!-- work-->
     <section id="work" class="section">
-      <h1>My work</h1>
-      <h3>Projects</h3>
-      <div class="work__categories">
-        <button class="category__btn">All<span class="category__count">5</span></button>
-        <button class="category__btn">Front-end<span class="category__count">3</span></button>
-        <button class="category__btn">Back-end<span class="category__count">2</span></button>
-      </div>
-      <div class="work__projects">
-        <a href="https://www.naver.com" target="blank" class="project">Dog</a>
-        <img class="project__img" src="img/projects/img1.jpg" alt="dog_image1">
-        <div class="project_description">
-          <h3>Dog</h3>
-          <span>Wang!</span>
+      <div class="section__container">
+        <h1>My work</h1>
+        <h3>Projects</h3>
+        <div class="work__categories">
+          <button class="category__btn selected" data-filter="*" >All<span class="category__count active">5</span></button>
+          <button class="category__btn" data-filter="front-end">Front-end<span class="category__count">3</span></button>
+        <button class="category__btn" data-filter="back-end">Back-end<span class="category__count">2</span></button>
         </div>
-      </div>
-      <div class="work__projects">
-        <a href="https://www.naver.com" target="blank" class="project">Dog</a>
-        <img class="project__img" src="img/projects/img2.jpg" alt="dog_image2">
-        <div class="project_description">
-          <h3>Dog2</h3>
-          <span>Wang!</span>
+        <div class="work__projects">
+          <a href="https://www.naver.com" data-type="front-end" target="blank" class="project">
+            <img class="project__img" src="img/projects/img1.jpg" alt="dog_image1">
+            <div class="project_description">
+              <h3>Dog</h3>
+              <span>Wang!</span>
+            </div>
+          </a>
+          <a href="https://www.naver.com" data-type="back-end" target="blank" class="project">
+            <img class="project__img" src="img/projects/img2.jpg" alt="dog_image2">
+            <div class="project_description">
+              <h3>Dog2</h3>
+              <span>Wang!</span>
+            </div>
+          </a>
+          <a href="https://www.naver.com" data-type="front-end" target="blank" class="project">
+            <img class="project__img" src="img/projects/img3.jpg" alt="dog_image3">
+            <div class="project_description">
+              <h3>Dog3</h3>
+              <span>Wang!</span>
+            </div>
+          </a>
         </div>
-      </div>
-      <div class="work__projects">
-        <a href="https://www.naver.com" target="blank" class="project">Dog</a>
-        <img class="project__img" src="img/projects/img3.jpg" alt="dog_image3">
-        <div class="project_description">
-          <h3>Dog3</h3>
-          <span>Wang!</span>
-        </div>
-      </div>
+      </div> 
     </section>
 
 
     <!--Testimonials-->
     <section id="testimonials" class="section">
-      <h1>Testimonials</h1>
-      <h3>See what say say about me</h3>
-      <div class="testimonial">
-        <img src="img/person.jpg" alt="person" class="testimonial__avatat">
-        <div class="testimonial_speech-bubble">
-          <p>
-            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and
-            1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by
-            English versions from the 1914 translation by H. Rackham.
-          </p>
-          <p class="name"><a href="">wang/samsung</a></p>
-        </div>
+      <div class="section__container">
+        <h1>Testimonials</h1>
+        <h3>See what say say about me</h3>
         <div class="testimonial">
           <img src="img/person.jpg" alt="person" class="testimonial__avatat">
           <div class="testimonial_speech-bubble">
@@ -258,8 +257,20 @@
             </p>
             <p class="name"><a href="">wang/samsung</a></p>
           </div>
-      </div>
-    </sction>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial_speech-bubble">
+            <p>
+              The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and
+              1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by
+              English versions from the 1914 translation by H. Rackham.
+            </p>
+            <p class="name"><a href="">wang/samsung</a></p>
+          </div>
+          <img src="img/person.jpg" alt="person" class="testimonial__avatat">
+        </div>
+      </div> 
+    </section>
 
 
     <!--Contact-->
@@ -275,5 +286,10 @@
         copyRight 2021 yoo
       </div>
     </section>
+
+  <!-- Arrow Up button  -->
+    <button class="arrow-up">
+      <i class="fas fa-arrow-up"></i>
+    </button>
   </body>
 </html>
