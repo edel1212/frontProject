@@ -99,7 +99,7 @@ p {
   background-color: transparent;
   align-items: center;
   color: var(--color-white);
-  padding: 2px 16px;
+  padding: 5px 16px;
   transition: all var(--animetion-duration);
   z-index: 99;
 }
@@ -122,11 +122,10 @@ p {
   margin: 0 4px;
   padding: 8px 12px;
   cursor: pointer;
-  border: 1px solid transparent;
   border-radius: var(--size-border-radous);
 }
 
-.navbar__menu.active {
+.navbar__menu__item.active {
   border: 1px solid var(--color-white);
 }
 
@@ -171,6 +170,11 @@ p {
   padding: 8px 12px;
   border: 2px solid var(--color-white);
   color: var(--color-white);
+  transition: all var(--animetion-duration);
+}
+
+.home__contact:hover {
+  background-color: var(--color-orange);
 }
 
 /* Section comon */
@@ -189,7 +193,7 @@ p {
 .about__majors {
   display: flex;
   justify-content: space-between;
-  margin: 80px 0;
+  margin: 50px 0;
 }
 
 .major__icon {
@@ -305,6 +309,7 @@ p {
   border: 1px solid var(--color-dark-white);
   border-radius: var(--size-border-radous);
   padding: 4px 48px;
+  position: relative;
 }
 
 .category__btn.selected,
@@ -321,9 +326,9 @@ p {
   color: var(--color-white);
   display: inline-block;
   line-height: 24px;
-  position: relative;
+  position: absolute;
   top: -20px;
-  left: 4px;
+  right: 16px;
   opacity: 0;
   transition: all var(--animetion-duration);
 }
@@ -356,6 +361,10 @@ p {
   height: 250px;
   margin: 2px;
   background-color: var(--color-white);
+}
+
+.category__btn{
+  padding:8px
 }
 
 .project:hover .project_description {
@@ -495,8 +504,25 @@ p {
 
 /* For below 768px */
 @media screen and (max-width: 768px) {
+
+  :root{
+      /* Font size */
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
+
+  .section {
+    padding:16px;
+    padding-top: 40px;
+  }
+
   .navbar__toggle-btn {
     display: block;
+    font-size: var(--font-medium);
+
   }
   #navbar {
     flex-direction: column;
@@ -505,7 +531,7 @@ p {
   }
 
   .navbar__menu_ul{
-    display: flex;
+    display: flex !important;
   }
 
   .navbar__menu.open{
@@ -533,5 +559,31 @@ p {
 
   .project {
     flex-grow: 1;
+  }
+  .testimonial{
+    align-items: center;
+  }
+  .testimonial__avatat{
+    margin: 0 !important;
+  }
+  .category__btn{
+    margin: 4px 0;
+    width: 100%;
+  }
+  .testimonial:nth-child(odd){
+    flex-direction: column;
+  }
+
+  .testimonial:nth-child(even){
+    flex-direction: column-reverse;
+  }
+
+  .arrow-up{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    right: 16px;
+    bottom: 16px;
   }
 }
