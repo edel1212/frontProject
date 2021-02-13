@@ -105,7 +105,7 @@ p {
 }
 
 #navbar.navbar--dark {
-  background-color: #b4df81a8;
+  background-color: #23965c61;
   padding: 5px;
 }
 
@@ -131,7 +131,7 @@ p {
 
 .navbar__menu__item:hover {
   border-color: white;
-  background-color: var(--color-dark-pink);
+  background-color: rgb(40, 156, 40);
 }
 
 .navbar__toggle-btn {
@@ -227,6 +227,10 @@ p {
   align-items: center;
 }
 
+.job img{
+  width: 10%;
+}
+
 .job__discription {
   margin: 0 16px;
   text-align: left;
@@ -247,7 +251,7 @@ p {
 
 /* Skill */
 #skills {
-  background-color: var(--color-yellow);
+  background-color: #d7e7c0;
 }
 
 .skillset {
@@ -283,7 +287,7 @@ p {
 }
 .skill__value {
   height: 3px;
-  width: 95%;
+  width: 100%;
   background-color: var(--color-orange);
 }
 .skillset__right {
