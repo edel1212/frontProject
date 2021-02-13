@@ -227,7 +227,7 @@ p {
   align-items: center;
 }
 
-.job img{
+.job img {
   width: 10%;
 }
 
@@ -314,6 +314,7 @@ p {
   border-radius: var(--size-border-radous);
   padding: 4px 48px;
   position: relative;
+  min-width: 165px;
 }
 
 .category__btn.selected,
@@ -367,8 +368,8 @@ p {
   background-color: var(--color-white);
 }
 
-.category__btn{
-  padding:8px
+.category__btn {
+  padding: 8px;
 }
 
 .project:hover .project_description {
@@ -412,7 +413,7 @@ p {
   background-color: var(--color-white);
   position: relative;
   left: 50%;
-  transform : translateX(-50%)
+  transform: translateX(-50%);
   margin-top: 8px;
 }
 
@@ -460,7 +461,7 @@ p {
 
 /* Contact */
 #contact {
-  background-color: var(--color-pink);
+  background-color: #8eb360;
 }
 
 .contact__email,
@@ -505,12 +506,10 @@ p {
   pointer-events: auto;
 }
 
-
 /* For below 768px */
 @media screen and (max-width: 768px) {
-
-  :root{
-      /* Font size */
+  :root {
+    /* Font size */
     --font-large: 30px;
     --font-medium: 18px;
     --font-regular: 16px;
@@ -519,14 +518,13 @@ p {
   }
 
   .section {
-    padding:16px;
+    padding: 16px;
     padding-top: 40px;
   }
 
   .navbar__toggle-btn {
     display: block;
     font-size: var(--font-medium);
-
   }
   #navbar {
     flex-direction: column;
@@ -534,11 +532,11 @@ p {
     background-color: #b4df81a8;
   }
 
-  .navbar__menu_ul{
+  .navbar__menu_ul {
     display: flex !important;
   }
 
-  .navbar__menu.open{
+  .navbar__menu.open {
     display: block;
   }
 
@@ -564,25 +562,25 @@ p {
   .project {
     flex-grow: 1;
   }
-  .testimonial{
+  .testimonial {
     align-items: center;
   }
-  .testimonial__avatat{
+  .testimonial__avatat {
     margin: 0 !important;
   }
-  .category__btn{
+  .category__btn {
     margin: 4px 0;
     width: 100%;
   }
-  .testimonial:nth-child(odd){
+  .testimonial:nth-child(odd) {
     flex-direction: column;
   }
 
-  .testimonial:nth-child(even){
+  .testimonial:nth-child(even) {
     flex-direction: column-reverse;
   }
 
-  .arrow-up{
+  .arrow-up {
     width: 50px;
     height: 50px;
     font-size: 30px;
